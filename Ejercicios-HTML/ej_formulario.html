@@ -18,26 +18,31 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
+<form id="fomr1">
+Nombre:<input type="text" name="nombre"><br>
+Apellido:<input type="text" name="apellido"><br>
+Sexo: <input type="radio" name="gender" value="male" checked=""> Male
+<input type="radio" name="gender" value="female"> Female<br>
+Edad:<input type="number" name="edad"><br>
+Email:<input type="email" name="email"><br>
+Usuario:<input type="text" name="usuario"><br>
+Password:<input type="password" name="psw"><br>
+Confirmar Password:<input type="password" name="psw"><br>
+Tipo de servicio:<select name="Tipo de servicio:">
+<option value="Free">Free</option>
+<option value="Standard">Standar</option>
+<option value="Premium">Premium</option>
+</select>
+<br>
 Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
-
+<input type="checkbox" name="Politica" value="Politica">Politica
+<input type="checkbox" name="Negocios" value="Negocios">Negocios
+<input type="checkbox" name="Tecnologia" value="Tecnologia">Tecnologia
+<input type="checkbox" name="Salud" value="Salud">Salud
+<br>
+Agregue un comentario:<br>
+    <textarea name="comentario"></textarea><br>>
+<button type="button">Enviar</button>
+</form>
 </body>
 </html>
